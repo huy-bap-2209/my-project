@@ -42,7 +42,8 @@ h2 {
 input[type="email"],
 input[type="password"],
 input[type="text"],
-input[type="repassword"] {
+input[type="repassword"],
+textarea[id="message"] {
   width: 100%;
   padding: 12px;
   border-radius: 10px;
@@ -53,7 +54,8 @@ input[type="repassword"] {
 }
 
 input[type="text"]:hover,
-input[type="password"]:hover {
+input[type="password"]:hover,
+textarea[id="message"]:hover {
   box-shadow: 0 0 10px rgb(0, 255, 255), 0 0 20px rgb(246, 0, 246);
   transform: scale(1.2) rotate(2deg);
 }

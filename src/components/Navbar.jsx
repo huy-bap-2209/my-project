@@ -1,6 +1,12 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import { FaBoxOpen, FaHome, FaInfoCircle, FaPhone } from "react-icons/fa";
+import {
+  FaBoxOpen,
+  FaHome,
+  FaInfoCircle,
+  FaPhone,
+  FaPaperPlane,
+} from "react-icons/fa";
 import "../style/navbar.css";
 
 function Navbar() {
@@ -20,6 +26,11 @@ function Navbar() {
       icon: <FaBoxOpen size={30} color="#007bff" />,
       title: "Sản Phẩm",
     },
+    "/support": {
+      icon: <FaPaperPlane size={30} color="#007bff" />,
+      title: "Hỗ Trợ",
+    },
+
     "/contact": {
       icon: <FaPhone size={30} color="#007bff" />,
       title: "Liên Hệ",
@@ -43,6 +54,7 @@ function Navbar() {
         <Link to="/home">Home</Link>
         <Link to="/about">About</Link>
         <Link to="/product">Product</Link>
+        <Link to="/support">Support</Link>
         <Link to="/contact">Contact</Link>
       </nav>
     </header>

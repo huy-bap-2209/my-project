@@ -1,0 +1,82 @@
+/* Bao quanh danh sách sản phẩm */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  /* background: linear-gradient(120deg, #ff6ec4, #7873f5, #42f5c9, #f5e642); */
+  background-size: 400% 400%;
+  /* animation: gradientMove 10s ease infinite; */
+}
+
+/* Hiệu ứng gradient chuyển động */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Mỗi thẻ sản phẩm */
+.product-card {
+  width: 180px;
+  padding: 15px;
+  text-align: center;
+  border-radius: 20px;
+  background: linear-gradient(45deg, #ff8c00, #ff1493, #00ffff);
+  background-size: 400% 400%;
+  animation: cardGradient 8s ease infinite;
+  box-shadow: 0 0 20px #fff, 0 0 40px #ff0, 0 0 60px #0ff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover hiệu ứng phồng và sáng hơn */
+.product-card:hover {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 0 30px #fff, 0 0 60px #ff0, 0 0 90px #0ff;
+}
+
+/* Gradient animation riêng cho từng thẻ */
+@keyframes cardGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Ảnh sản phẩm */
+.product-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 2px solid #fff;
+}
+
+/* Tên sản phẩm */
+.product-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff0;
+  text-shadow: 1px 1px 5px #000, -1px -1px 5px #fff;
+  margin: 10px 0 5px;
+}
+
+/* Giá sản phẩm */
+.product-card p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #0ff;
+  text-shadow: 1px 1px 5px #000, -1px -1px 5px #fff;
+}
